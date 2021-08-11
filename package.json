@@ -21,6 +21,16 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+     "overrides": [
+      {
+        "files": [
+          "src/**/*.stories.js"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "browserslist": {
@@ -35,4 +45,6 @@
       "last 1 safari version"
     ]
   }
+  
+  
 }
