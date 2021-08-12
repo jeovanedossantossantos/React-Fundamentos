@@ -14,7 +14,9 @@ import Card from './componts/layout/Card'
 import Familia from "./componts/basicos/Familia"
 import FamiliaMembro from "./componts/basicos/FamiliaMembro"
 import ListaAlunos from "./componts/repeticao/ListaAlunos"
-
+import TabelaProdutos from "./componts/repeticao/TabelaProdutos"
+import ParOuImpar from "./componts/condicional/ParOuImpar"
+import UsuarioInfo from "./componts/condicional/UsuarioInfo"
 
 export default () =>(
 
@@ -22,6 +24,31 @@ export default () =>(
         <h1>Funadamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#08 - Redenização Condicional" color="#287">
+
+                <ParOuImpar numero={21}>
+
+                </ParOuImpar>
+                <UsuarioInfo usuario={{nome:"Fernando"}}>
+                
+
+                </UsuarioInfo>
+                
+                <UsuarioInfo usuario={{ email: "Fernando@fé.com" }}>
+
+
+                </UsuarioInfo>
+
+
+            </Card>
+            <Card titulo="#07 -Desafio" color="#302">
+
+                <TabelaProdutos>
+
+                </TabelaProdutos>
+                
+
+            </Card>
             <Card titulo="#06 - Repetição" color="#205">
                 <ListaAlunos></ListaAlunos>
                 
