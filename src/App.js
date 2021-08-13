@@ -17,6 +17,9 @@ import ListaAlunos from "./componts/repeticao/ListaAlunos"
 import TabelaProdutos from "./componts/repeticao/TabelaProdutos"
 import ParOuImpar from "./componts/condicional/ParOuImpar"
 import UsuarioInfo from "./componts/condicional/UsuarioInfo"
+import DiretoPai from "./componts/comunicacao/DiretaPai"
+import Indireta from "./componts/comunicacao/IndiretaPai"
+import Input from "./componts/formulario/Input"
 
 export default () =>(
 
@@ -24,6 +27,32 @@ export default () =>(
         <h1>Funadamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#11 - Componente controlado" color="#237">
+
+                <Input></Input>
+
+
+
+            </Card>
+            <Card titulo="#10 - Comunicação Indireta" color="#247">
+
+                <Indireta>
+
+                </Indireta>
+
+
+
+            </Card>
+            <Card titulo="#09 - Comunicação Direta" color="#257">
+
+                <DiretoPai>
+
+                </DiretoPai>
+               
+
+
+            </Card>
+
             <Card titulo="#08 - Redenização Condicional" color="#287">
 
                 <ParOuImpar numero={21}>
@@ -33,11 +62,13 @@ export default () =>(
                 
 
                 </UsuarioInfo>
+
                 
-                <UsuarioInfo usuario={{ email: "Fernando@fé.com" }}>
+                
+               { /*<UsuarioInfo usuario={{ email: "Fernando@fé.com" }}>
 
 
-                </UsuarioInfo>
+            </UsuarioInfo>*/}
 
 
             </Card>
