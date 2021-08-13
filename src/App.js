@@ -20,6 +20,9 @@ import UsuarioInfo from "./componts/condicional/UsuarioInfo"
 import DiretoPai from "./componts/comunicacao/DiretaPai"
 import Indireta from "./componts/comunicacao/IndiretaPai"
 import Input from "./componts/formulario/Input"
+import Contador from "./componts/contador/Contador"
+import Contador1 from "./componts/contador/Contador1"
+import Mega from "./componts/mega/Mega"
 
 export default () =>(
 
@@ -27,6 +30,29 @@ export default () =>(
         <h1>Funadamentos React</h1>
 
         <div className="Cards">
+            <Card titulo="#13 - Mega" color="#27">
+
+                <Mega></Mega>
+
+
+
+            </Card>
+            <Card titulo="#12 - Componente Contador1" color="#127">
+
+                <Contador1 numeroInicial={10}></Contador1>
+                <Contador1 numeroInicial={100}></Contador1>
+
+
+
+            </Card>
+            <Card titulo="#12 - Componente Contador" color="#227">
+
+                <Contador numeroInicial={10}></Contador>
+                <Contador numeroInicial={100}></Contador>
+
+
+
+            </Card>
             <Card titulo="#11 - Componente controlado" color="#237">
 
                 <Input></Input>
